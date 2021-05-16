@@ -29,5 +29,20 @@ namespace PickACardUI
         {
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string[] pickedCards = CardPicker.PickSomeCards((int)numberOfCards.Value);
+            listOfCards.Items.Clear();
+            foreach (string card in pickedCards)
+            {
+                listOfCards.Items.Add(card);
+            }            
+        }
+
+        private void numberOfCards_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
     }
 }
