@@ -1,3 +1,3 @@
 # PickACardUI
 
-WPF console app
+WPF app with UI
